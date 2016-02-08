@@ -20,6 +20,7 @@ class Pdo_Connexion {
 			{
 			try {
 				$dbh = new PDO("mysql:host=".$ini_array['HOST_db'].";dbname=".$ini_array['DB_db'], $ini_array['USER_db'], $ini_array['PASS_db']);
+                //Permet de renvoyer des erreurs de crash mysql
 				$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 				return $dbh;
 				}

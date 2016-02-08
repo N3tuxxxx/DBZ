@@ -1,1 +1,37 @@
+/*AFFICHAGE DES TABLES*/
 
+.table_style {
+    display: block;
+    border: solid 2px Black;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+
+thead tr {
+    border: solid 1px black;
+    background-color: firebrick;
+}
+
+
+tbody tr {
+    
+    border: solid 1px black;
+    background-color: lightskyblue;
+}
+
+td{
+    border: solid 1px black;
+}
+
+.edit {
+    border: none;
+ background-color: white;      
+   
+}
+
+.delete {
+    border: none;
+    background-color: white;
+}
