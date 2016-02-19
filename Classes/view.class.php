@@ -58,7 +58,7 @@ class View {
                         <?php  }?>
                          <?php foreach($TABLE2 as $k3=>$value2){ ?>
                         <td><?php echo $value2; ?></td>
-                         <!--Update Button-->
+                         <!--Update Button  Non functional -->
                         <td class="edit"><a href="">Update</a></td>
                         <!--Delete Button-->
                         <td class="delete"><a href="index.php?DEL=<?php echo $TABLE2[$k3] ;?>&Nom=<?php echo $first_column; ?>&T=<?php echo $table ;?>">Delete</a></td>
@@ -74,7 +74,7 @@ class View {
     </div>
 
 
-    <!--Add data-->
+    <!--Add data Non functional-->
 
     <div class="ajout"> 
     <form action="./Classes/model.class.php" method="POST">

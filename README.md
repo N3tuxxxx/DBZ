@@ -6,6 +6,8 @@ OBJECTIVES
 The initial branch of this master project allow to connect on a database and list tables stored in
 dynamically. Branch script achievement should give possibility to list, fill, modify and delete data
 collected from tables, regardless of the loaded database.
+Currently, we can only list data from selected table and delete an occurence.
+Edit and Add features are present but not opérationnal .
 
 PROJECT
 

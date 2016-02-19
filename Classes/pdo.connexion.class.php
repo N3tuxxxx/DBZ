@@ -10,7 +10,7 @@ class Pdo_Connexion {
 		if (file_exists($ini_file))	$this->CNX = $this->LoadIni ($ini_file);
 		}
 
-	// db connexion vars stored inifile
+	// db connexion vars stored in ini file
 	private function LoadIni ($file) {
 		$ini_array = parse_ini_file($file);
 		if ((isset($ini_array['USER_db']) && !empty($ini_array['USER_db']))
@@ -20,12 +20,12 @@ class Pdo_Connexion {
 			{
 			try {
 				$dbh = new PDO("mysql:host=".$ini_array['HOST_db'].";dbname=".$ini_array['DB_db'], $ini_array['USER_db'], $ini_array['PASS_db']);
-                //Permet de renvoyer des erreurs de crash mysql
+                //Return error log about mysql connexion
 				$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 				return $dbh;
 				}
 			catch (PDOException $e) {
-				echo "Connexion à la base de données impossible.";
+				echo "Database connexion impossible";
 				die();
 				}
 			}
